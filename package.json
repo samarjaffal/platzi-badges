@@ -12,8 +12,15 @@
     "eject": "react-scripts eject"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.28",
+    "@fortawesome/free-brands-svg-icons": "^5.13.0",
+    "@fortawesome/free-solid-svg-icons": "^5.13.0",
+    "@fortawesome/react-fontawesome": "^0.1.9",
+    "bootstrap": "^4.4.1",
+    "md5": "^2.2.1",
     "react": "16.8.3",
     "react-dom": "16.8.3",
+    "react-router-dom": "^5.1.2",
     "react-scripts": "2.1.5"
   },
   "devDependencies": {
