@@ -4,7 +4,7 @@ import "./styles/Footer.css";
 
 function Footer() {
   return (
-    <footer className="bg-primary mt-3">
+    <footer className="bg-primary">
       <div className="container-fluid">
         <div className="footer">
           <span className="text-white">

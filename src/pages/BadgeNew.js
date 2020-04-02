@@ -136,7 +136,7 @@ class BadgeNew extends React.Component {
             alt="logo"
           />
         </div>
-        <div className="container">
+        <div className="container mb-5">
           <div className="row">
             <div className="col-6">
               <Badge
