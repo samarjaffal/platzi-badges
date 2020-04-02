@@ -43,15 +43,24 @@ function BadgesList(props) {
   return (
     <React.Fragment>
       <div className="form-group">
-        <label>Filter Badges</label>
-        <input
-          type="text"
-          className="form-control"
-          value={query}
-          onChange={e => {
-            setQuery(e.target.value);
-          }}
-        />
+        <label className="h2 anton">Filter Badges </label>
+
+        <div className="input-group">
+          <input
+            type="text"
+            className="form-control Search__badge-input"
+            placeholder="Type something..."
+            value={query}
+            onChange={e => {
+              setQuery(e.target.value);
+            }}
+          />
+          <div className="input-group-append">
+            <span className="input-group-text secondary__bg" id="basic-addon2">
+              <FontAwesomeIcon icon="search" className="text-white mx-auto" />
+            </span>
+          </div>
+        </div>
       </div>
       {filteredBadges.length === 0 && (
         <div>

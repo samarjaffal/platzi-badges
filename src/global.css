@@ -14,7 +14,11 @@ body {
 
 h1,
 h2 {
-  font-family: 'Anton', sans-serif;
+  font-family: 'Anton', sans-serif !important;
+}
+
+.anton {
+  font-family: 'Anton', sans-serif !important;
 }
 
 a.link-unstyled {
@@ -76,4 +80,12 @@ a.link-unstyled:hover {
 
 .f4r {
   font-size: 4rem;
+}
+
+.secondary__color {
+  color: #7DCD40 !important;
+}
+
+.secondary__bg {
+  background-color: #7DCD40 !important;
 }

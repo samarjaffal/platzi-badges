@@ -26,3 +26,11 @@
 .BadgesListItem-info {
   width: 100% !important;
 }
+
+.input-group-text {
+  width: 60px !important;
+}
+
+.Search__badge-input {
+  padding: 20px !important;
+}

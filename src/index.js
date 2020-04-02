@@ -14,7 +14,8 @@ import "bootstrap/dist/css/bootstrap.css";
 import "./global.css";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
-library.add(fab);
+import { faSearch } from "@fortawesome/free-solid-svg-icons";
+library.add(fab, faSearch);
 
 //with JSX
 //const jsx = <h1>Hello, Platzi Bagdes from React!</h1>
