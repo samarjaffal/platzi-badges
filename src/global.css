@@ -89,3 +89,7 @@ a.link-unstyled:hover {
 .secondary__bg {
   background-color: #7DCD40 !important;
 }
+
+.bg-primary {
+  background-color: #1C3643 !important;
+}
