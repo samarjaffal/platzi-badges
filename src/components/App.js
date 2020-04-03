@@ -16,7 +16,7 @@ import Layout from "./Layout";
 
 function App() {
   return (
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
+    <HashRouter basename={process.env.PUBLIC_URL}>
       <Layout>
         <Switch>
           <Route exact path="/" component={Home} />
@@ -33,7 +33,7 @@ function App() {
           {/* <Route component={NotFound} /> */}
         </Switch>
       </Layout>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
