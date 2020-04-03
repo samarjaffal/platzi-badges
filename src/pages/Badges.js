@@ -11,7 +11,7 @@ import api from "../api";
 class Badges extends React.Component {
   constructor(props) {
     super(props);
-    console.log("1. constructor");
+    //console.log("1. constructor");
     this.state = {
       loading: true,
       error: null,
@@ -20,7 +20,7 @@ class Badges extends React.Component {
   }
 
   componentDidMount() {
-    console.log("3. componentDidMount");
+    //console.log("3. componentDidMount");
     this.fetchData();
 
     this.intervalId = setInterval(this.fetchData, 5000);
@@ -37,19 +37,19 @@ class Badges extends React.Component {
   };
 
   componentDidUpdate(prevProps, prevState) {
-    console.log("5. componentDidUpdate");
-    console.log({
-      prevProps: prevProps,
-      prevState: prevState
-    });
-    console.log({
-      props: this.props,
-      state: this.state
-    });
+    //console.log("5. componentDidUpdate");
+    // console.log({
+    //   prevProps: prevProps,
+    //   prevState: prevState
+    // });
+    // console.log({
+    //   props: this.props,
+    //   state: this.state
+    // });
   }
 
   componentWillUnmount() {
-    console.log("6. ComponentWillUnmount");
+    //console.log("6. ComponentWillUnmount");
     clearInterval(this.intervalId);
     //se borra de memoria o se detiene la ejecucion al desmontarse el componente.
     //muy importante este paso debido a que no debemos dejar ejecuciones por fuera pendientes
@@ -58,7 +58,7 @@ class Badges extends React.Component {
   }
 
   render() {
-    console.log("2. render");
+    //console.log("2. render");
 
     if (this.state.loading === true && !this.state.data) {
       return <PageLoading />;

@@ -1,5 +1,11 @@
 import React from "react";
-import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
+import {
+  HashRouter,
+  BrowserRouter,
+  Route,
+  Switch,
+  Redirect
+} from "react-router-dom";
 import BadgeNew from "../pages/BadgeNew";
 import BadgeEdit from "../pages/BadgeEdit";
 import BadgeDetailsContainer from "../pages/BadgeDetailsContainer";
@@ -10,7 +16,7 @@ import Layout from "./Layout";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Layout>
         <Switch>
           <Route exact path="/" component={Home} />
@@ -32,3 +38,11 @@ function App() {
 }
 
 export default App;
+
+export const routes = {
+  home: "/",
+  404: "/404",
+  badges: {
+    create: "/badges/new"
+  }
+};
