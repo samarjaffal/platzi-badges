@@ -4,7 +4,7 @@ self.__precacheManifest = [
     "url": "/platzi-badges/static/media/badge-header.ed7c58ea.svg"
   },
   {
-    "revision": "5087f899f159dcd66e47",
+    "revision": "ea44ee728f92b66fce31",
     "url": "/platzi-badges/static/css/main.777ae3c8.chunk.css"
   },
   {
@@ -24,8 +24,8 @@ self.__precacheManifest = [
     "url": "/platzi-badges/static/media/platziconf-logo.a1880fbf.svg"
   },
   {
-    "revision": "5087f899f159dcd66e47",
-    "url": "/platzi-badges/static/js/main.5087f899.chunk.js"
+    "revision": "ea44ee728f92b66fce31",
+    "url": "/platzi-badges/static/js/main.ea44ee72.chunk.js"
   },
   {
     "revision": "0abcdfcd1e323649a0338a204fe8b853",
@@ -44,7 +44,7 @@ self.__precacheManifest = [
     "url": "/platzi-badges/static/css/2.ca3280c9.chunk.css"
   },
   {
-    "revision": "740483ae83640131fe7dd06917280828",
+    "revision": "3b31cdacb28212da96e4be336faf8b27",
     "url": "/platzi-badges/index.html"
   }
 ];
