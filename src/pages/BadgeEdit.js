@@ -11,17 +11,24 @@ class BadgeEdit extends React.Component {
   state = {
     loading: true,
     error: null,
+    formErrors: {
+      firstName: "",
+      lastName: "",
+      jobTitle: "",
+      email: "",
+      twitter: "",
+    },
     form: {
       firstName: "",
       lastName: "",
       jobTitle: "",
       email: "",
       twitter: "",
-      avatarUrl: ""
-    }
+      avatarUrl: "",
+    },
   };
 
-  handleChange = e => {
+  handleChange = (e) => {
     //1ra solucion para hacer una copia del form
     // const nextForm = this.state.form;
     // nextForm[e.target.name] = e.target.value;
@@ -33,8 +40,8 @@ class BadgeEdit extends React.Component {
       //2da solucion
       form: {
         ...this.state.form,
-        [e.target.name]: e.target.value
-      }
+        [e.target.name]: e.target.value,
+      },
     });
   };
 
@@ -42,7 +49,7 @@ class BadgeEdit extends React.Component {
     this.fetchData();
   }
 
-  fetchData = async e => {
+  fetchData = async (e) => {
     this.setState({ loading: true, error: null });
 
     try {
@@ -55,12 +62,12 @@ class BadgeEdit extends React.Component {
   };
 
   //put method
-  handleSubmit = async e => {
+  handleSubmit = async (e) => {
     e.preventDefault();
     const hash = md5(this.state.form.email);
     this.state.form = {
       ...this.state.form,
-      avatarUrl: `https://www.gravatar.com/avatar/${hash}?d=identicon`
+      avatarUrl: `https://www.gravatar.com/avatar/${hash}?d=identicon`,
     };
     this.setState({ loading: true, error: null });
     try {
@@ -86,7 +93,7 @@ class BadgeEdit extends React.Component {
             alt="logo"
           />
         </div>
-        <div className="container">
+        <div className="container mb-5">
           <div className="row">
             <div className="col-6">
               <Badge
@@ -105,6 +112,7 @@ class BadgeEdit extends React.Component {
                 formValues={this.state.form}
                 onSubmit={this.handleSubmit}
                 error={this.state.error}
+                formErrors={this.state.formErrors}
               />
             </div>
           </div>
