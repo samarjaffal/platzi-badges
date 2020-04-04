@@ -6,4 +6,6 @@ Platzi Badges is a React Web App for:  React.js Platzi Course. This platform all
 - Single Page Application (SPA)
 - React Hooks
 
+See the project working here: https://samarjaffal.github.io/platzi-badges/
+
 ![Home - Platzi Badges](src/images/platzi_badges.png)
